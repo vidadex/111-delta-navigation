@@ -14,4 +14,14 @@ import android.widget.Toast;
  */
 public class FirstFragment extends Fragment {
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.first_fragment, container, false);
+        TextView textView = (TextView) rootView.findViewById(R.id.fragmentName);
+        textView.setText("First Fragment");
+
+        return rootView;
+    }
 }
+
+
